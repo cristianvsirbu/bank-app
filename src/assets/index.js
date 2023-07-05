@@ -21,6 +21,9 @@ import instagram from '../assets/instagram.png';
 import linkedin from '../assets/linkedin.png';
 import twitter from '../assets/twitter.png';
 import card from '../assets/card.png';
+import users_dark from '../assets/users_dark.png';
+import transactions_dark from '../assets/transactions_dark.png';
+import trust_dark from '../assets/trust_dark.png';
 
 
 export {
@@ -46,5 +49,8 @@ export {
     instagram,
     linkedin,
     twitter,
-    card
+    card,
+    users_dark,
+    transactions_dark,
+    trust_dark
 }

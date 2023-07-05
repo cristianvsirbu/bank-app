@@ -82,6 +82,11 @@
   -webkit-animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
+.stats {
+  -webkit-animation: slide-top 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-top 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation-delay: 1s;
+}
 
 @-webkit-keyframes slide-top {
   0% {
@@ -140,10 +145,7 @@
 }
 
 .discount__gradient {
-  width: 30px;
-  height: 30px;
-  flex-shrink: 0;
-  border-radius: 30px;
   background: #05F6FA;
-  filter: blur(27.5px);
+  filter: blur(30px);
+  opacity: 0.45;
 }
