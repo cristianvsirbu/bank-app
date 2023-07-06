@@ -24,7 +24,10 @@ import card from '../assets/card.png';
 import users_dark from '../assets/users_dark.png';
 import transactions_dark from '../assets/transactions_dark.png';
 import trust_dark from '../assets/trust_dark.png';
-
+import graph from '../assets/graph.json';
+import apple from '../assets/apple.svg';
+import google from '../assets/google.svg';
+import reward from '../assets/reward.png';
 
 export {
     people01,
@@ -52,5 +55,9 @@ export {
     card,
     users_dark,
     transactions_dark,
-    trust_dark
+    trust_dark,
+    graph,
+    apple,
+    google,
+    reward
 }

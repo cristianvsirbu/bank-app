@@ -1,30 +1,27 @@
 import styles from "../style"
-import { sale, card} from "../assets"
+import { sale, card } from "../assets"
 
 const Hero = () => (
-  <section className={`
-    flex
-    md:flex-row
-    flex-col
-    ${styles.paddingY}
+  <section className={` flex justify-center lg:justify-start lg:flex-col
+    lg:pb-0
+    ${styles.paddingY} 
   `}>
     <div className={`
-      flex-1
-      ${styles.flexStart} 
+      flex
       flex-col
       xl:px-0 
       sm:px-16 
-      px-6 
-      items-center 
-      lg:items-start
+      px-6
+       
     `}>
-      <div className="
-        flex 
-        flex-row 
-        self-center 
-        lg:self-start 
-        items-center 
-        py-[1px] 
+
+      <div className="flex flex-col items-center lg:items-start">
+        
+        <div className="
+        flex  
+        items-center
+        self-center
+        lg:self-start	  
         sm:py-[5px] 
         px-2 
         md:px-4 
@@ -32,71 +29,56 @@ const Hero = () => (
         rounded-[25px] 
         sm:rounded-[15px] 
         md:rounded-[10px] 
-        mb-2
       ">
-        <div className="
-          discount__gradient
-          absolute
-          w-10
-          h-10" 
-        />
-        <img 
-          src={sale} 
-          alt="discount" 
-          className="w-[22px] sm:w-[32px]" />
-        <p
-          className={`
+
+          <img
+            src={sale}
+            alt="discount"
+            className="w-[22px] sm:w-[32px]" />
+          <p
+            className={`
             ${styles.paragraph} 
             ml-2
-            text-[10px]
-            sm:text-[18px]
+            text-[12px]
+            md:text-[16px]
+            lg:text-[18px] 
         `}>
-          <span className="text-white font-neue">50% </span>
-          DISCOUNT FOR {" "}
-          <span className="text-white font-neue"> 1 MONTH</span>
-        </p>
-      </div>
-      <div className="flex flex-col">
+            <span className="text-white font-neue">50% </span>
+            DISCOUNT FOR {" "}
+            <span className="text-white font-neue"> 1 MONTH</span>
+          </p>
+        </div>
+
         <h1
           className="
             flex-1
             font-neue
             font-bold
-            self-center
-            lg:self-start
+            text-center
+            lg:text-left
             ss:text-[72px]
             text-[50px]
             text-white
-            ss:leading-[100px]
-            leading-[65px]
         ">
-          We Grow <br className="sm:hidden" /> With You
+          We Grow <br className="sm:max-md:hidden" /> With You
         </h1>
 
         <p
           className={`
             ${styles.paragraph} 
             max-w-[600px] 
-            md:max-w-[620px] 
+            md:max-w-[570px] 
             sm:text-[18px] 
             md:text-[20px] 
-            lg:text-[24px] 
+            lg:text-[26px]
+            xl:text-[28px] 
             text-center 
-            md:text-left 
+            lg:text-left 
             text-[15px] 
-            text-white
-        `}>Our team of experts uses a methodology to identify the credit cards most likely to fit your needs. We examine annual percentage rates, annual fees.</p>
-
-      </div>
-      <div
-        className="
-          flex 
-          self-center 
-          lg:self-end 
-          lg:relative
-          lg:top-[-240px] 
-          xl:top-[-250px]
-      ">
+            text-dimWhite
+        `}>
+          Our team of experts uses a methodology to identify the credit cards most likely to fit your needs. We examine annual percentage rates, annual fees.
+        </p>
         <img
           src={card}
           alt="card"
@@ -104,13 +86,16 @@ const Hero = () => (
             w-[500px] 
             md:w-[550px]  
             mt-8 
-            lg:mt-0 
-            lg:w-[590px] 
-            xl:w-[600px]" 
+            lg:w-[650px] 
+            self-center
+            shrink
+            lg:self-end
+            lg:relative
+            bottom-[390px]
+            xl:bottom-[410px]
+            "
         />
       </div>
-
-
     </div>
   </section>
 )

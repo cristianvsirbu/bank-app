@@ -1,8 +1,9 @@
-import React from 'react'
+import { apple, google } from '../assets'
+import styles, { layout } from '../style'
 
 const PC = () => {
   return (
-    <div>PC</div>
+    
   )
 }
 
