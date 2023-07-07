@@ -20,14 +20,15 @@ const FeatureCard = ({ icon, title, content, index }) => (
 const Bussiness = () => {
   return (
     <section id="features" >
-      <div className="">
-        <div className="relative">
-        <h2 className={`${styles.heading2} text-center`}>With Us <br /> Your Money Are Safe
+      <div className="mt-10">
+        <div className="flex flex-col items-center">
+          <h2 className={`${styles.heading2} text-center leading-relaxed flex flex-col justify-center items-center whitespace-nowrap`}>
+            Your Money Are <br/> <span className={` ${styles.heading2} card__blur safe absolute `}/>Safe <br/> With Us  
         </h2>
-          <div className="card__blur sidebar absolute" />
-          </div>
         <p className={`${styles.paragraph} max-w-[470px]`}>
+          Paragraph under the logo
         </p>
+          </div>
       </div>
 
       <div className={`${layout.sectionImg} flex-col`}>
