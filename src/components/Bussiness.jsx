@@ -19,11 +19,13 @@ const FeatureCard = ({ icon, title, content, index }) => (
 
 const Bussiness = () => {
   return (
-    <section id="features" className={layout.section}>
-      <div className={layout.sectionInfo}>
+    <section id="features" >
+      <div className="">
+        <div className="relative">
         <h2 className={`${styles.heading2} text-center`}>With Us <br /> Your Money Are Safe
         </h2>
-        <div className="card__blur sidebar"></div>
+          <div className="card__blur sidebar absolute" />
+          </div>
         <p className={`${styles.paragraph} max-w-[470px]`}>
         </p>
       </div>

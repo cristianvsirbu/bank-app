@@ -3,22 +3,21 @@ import styles, { layout } from '../style';
 
 const Mobile = () => {
   return (
-    <section id='product' className={layout.section}>
-      <div className={`${layout.sectionImgReverse} flex-col`}>
-      </div>
-      <div className={`flex-col sm:flex-row mx-auto`}>
-        <img src={screenshot1} alt='screenshot1' className='mr-10' />
-        <img src={screenshot2} alt='screenshot2' />
-      </div>
-      <div className={`${layout.sectionInfo}`}>
-        <h2 className={styles.heading2}>Mobile</h2>
-        <p className={`${styles.paragraph} max-w-[470px]`}>We are in your pocket!</p>
+    <section id='product' className={`${layout.section}`}>
 
-        <div className='flex flex-row flex-wrap sm:mt-10 mt-6'>
-          <img src={apple} alt="apple" className='w-[128px] h-[42px] object-contain mr-5 cursor-pointer' />
-          <img src={google} alt="google" className='w-[128px] h-[42px] object-contain cursor-pointer'/>
+      <div className={`${layout.sectionImg} flex-col sm:flex-row sm:justify-evenly`}>
+        <img src={screenshot1} alt='screenshot1' className='w-full sm:max-w-[250px] md:max-w-[200px] lg:max-w-[250px]' />
+        <img src={screenshot2} alt='screenshot2' className='w-full sm:max-w-[250px] md:max-w-[200px] lg:max-w-[250px]' />
+      </div>
+      <div className={`flex-1 flex-col flex items-center md:items-start md:ml-5`}>
+        <h2 className={`${styles.heading2} text-center md:text-start mt-5 md:mt-0`}>We Are In Your Pocket</h2>
+        <p className={`${styles.paragraph} text-center md:text-start`}>Introducing our cutting-edge banking app, designed to revolutionize the way you manage your finances. Our app provides a seamless and secure platform that puts the power of banking right at your fingertips. With intuitive features and a user-friendly interface, you can effortlessly navigate through your accounts, check your balances, make payments, transfer funds, and even set personalized savings goals.</p>
+        <div className='flex mt-5'>
+          <img src={apple} alt="apple" className='' />
+          <img src={google} alt="google" className='' />
         </div>
       </div>
+
     </section>
   )
 }

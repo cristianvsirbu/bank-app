@@ -12,7 +12,6 @@ const Hero = () => (
       xl:px-0 
       sm:px-16 
       px-6
-       
     `}>
 
       <div className="flex flex-col items-center lg:items-start">
@@ -21,7 +20,8 @@ const Hero = () => (
         flex  
         items-center
         self-center
-        lg:self-start	  
+        lg:self-start
+        py-[3px]	  
         sm:py-[5px] 
         px-2 
         md:px-4 
@@ -37,9 +37,9 @@ const Hero = () => (
             className="w-[22px] sm:w-[32px]" />
           <p
             className={`
-            ${styles.paragraph} 
+            text-dimWhite
             ml-2
-            text-[11px]
+            text-[13px]
             md:text-[16px]
             lg:text-[18px] 
         `}>
@@ -60,7 +60,7 @@ const Hero = () => (
             text-[50px]
             text-white
         ">
-          We Grow <br className="sm:max-md:hidden" /> With You
+          We Grow <br className="sm:max-lg:hidden" /> With You
         </h1>
 
         <p
@@ -77,7 +77,7 @@ const Hero = () => (
             text-[15px] 
             text-dimWhite
         `}>
-          Our team of experts uses a methodology to identify the credit cards most likely to fit your needs. We examine annual percentage rates, annual fees.
+          With a commitment to excellence and personalized service, we strive to be your financial partner for life. Experience seamless banking solutions, expert advice, and a range of innovative products tailored to meet your unique needs.
         </p>
         <img
           src={card}
