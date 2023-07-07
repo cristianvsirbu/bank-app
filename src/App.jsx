@@ -17,16 +17,18 @@ const App = () => (
         <div className={`${styles.boxWidth}`}>
           <Stats />
           <Bussiness />
-          <PC />
           <Mobile />
+          <PC />
           <Testimonials />
           <Clients />
           <CTA />
-          <Footer />
+        <Footer />
+        <TestimonialCard />
+        <Button />
         </div>
       </div>
     </div>
   )
 
 
-export default App
+export default App;

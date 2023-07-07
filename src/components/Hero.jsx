@@ -39,7 +39,7 @@ const Hero = () => (
             className={`
             ${styles.paragraph} 
             ml-2
-            text-[12px]
+            text-[11px]
             md:text-[16px]
             lg:text-[18px] 
         `}>
