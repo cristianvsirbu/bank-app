@@ -8,6 +8,7 @@ export const theme = {
       secondary: "#00f6ff",
       dimWhite: "#848484",
       dimBlue: "#233e45",
+      navbar: "#04060d",
     },
     fontFamily: {
       neue: ["Neue Montreal", "sans-serif"],
