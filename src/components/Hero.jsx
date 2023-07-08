@@ -15,7 +15,7 @@ const Hero = () => (
     `}>
 
       <div className="flex flex-col items-center lg:items-start">
-        
+
         <div className="
         flex  
         items-center
@@ -29,12 +29,15 @@ const Hero = () => (
         rounded-[25px] 
         sm:rounded-[15px] 
         md:rounded-[10px] 
+        box-shadow-10
       ">
 
-          <img
-            src={sale}
-            alt="discount"
-            className="w-[22px] sm:w-[32px]" />
+          <span className="discount__gradient w-8 h-8 absolute animate-pulse" />
+            <img
+              src={sale}
+              alt="discount"
+              className="w-[22px] sm:w-[32px]" />
+          
           <p
             className={`
             text-dimWhite
@@ -67,11 +70,11 @@ const Hero = () => (
           className={`
             ${styles.paragraph} 
             max-w-[600px] 
-            md:max-w-[570px] 
+            md:max-w-[510px] 
             sm:text-[18px] 
             md:text-[20px] 
-            lg:text-[26px]
-            xl:text-[28px] 
+            lg:text-[22px]
+            xl:text-[24px] 
             text-center 
             lg:text-left 
             text-[15px] 
@@ -84,15 +87,17 @@ const Hero = () => (
           alt="card"
           className="
             w-[500px] 
-            md:w-[550px]  
-            mt-8 
+            md:w-[550px] 
             lg:w-[650px] 
+            mt-8 
+            lg:mt-0
             self-center
             shrink
             lg:self-end
             lg:relative
             bottom-[390px]
-            xl:bottom-[410px]
+            lg:bottom-[410px]
+            box-shadow-30
             "
         />
       </div>

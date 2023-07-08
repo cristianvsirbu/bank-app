@@ -25,8 +25,8 @@ import users_dark from '../assets/users_dark.png';
 import transactions_dark from '../assets/transactions_dark.png';
 import trust_dark from '../assets/trust_dark.png';
 import graph from '../assets/graph.json';
-import apple from '../assets/apple.svg';
-import google from '../assets/google.svg';
+import apple from '../assets/apple.png';
+import google from '../assets/google.png';
 import reward from '../assets/reward.png';
 
 export {

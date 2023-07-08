@@ -28,7 +28,9 @@ const Navbar = () => {
               {nav.title}
             </a>
           </li>
+            
         ))}
+        <button className='button__style w-[6rem] h-[2.5rem] font-neue font-bold text-white'>Sign Up</button>
       </ul>
       <div className='sm:hidden flex flex-1 justify-end items-center'>
         <img

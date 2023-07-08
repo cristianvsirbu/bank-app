@@ -23,7 +23,7 @@ const Bussiness = () => {
       <div className="mt-10">
         <div className="flex flex-col items-center">
           <h2 className={`${styles.heading2} text-center leading-relaxed flex flex-col justify-center items-center whitespace-nowrap`}>
-            Your Money Are <br/> <span className={` ${styles.heading2} card__blur safe absolute `}/>Safe <br/> With Us  
+            Your Money Are <br/> <span className={` ${styles.heading2} card__blur safe absolute box-shadow-20`}/>Safe <br/> With Us  
         </h2>
         <p className={`${styles.paragraph} max-w-[470px]`}>
           Paragraph under the logo
