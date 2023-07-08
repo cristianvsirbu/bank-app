@@ -1,5 +1,5 @@
 import { features } from "../constants"
-import styles, { layout } from '../style'
+import styles from '../style'
 
 const FeatureCard = ({ icon, title, content, index }) => (
   <div className={`flex flex-row p-6 rounded-[20px] ${index !== features.length - 1 ? "mb-6" : "mb-0"} feature-card`}>
@@ -25,16 +25,10 @@ const Bussiness = () => {
           <h2 className={`${styles.heading2} text-center leading-relaxed flex flex-col justify-center items-center whitespace-nowrap`}>
             Your Money Are <br/> <span className={` ${styles.heading2} card__blur safe absolute box-shadow-20`}/>Safe <br/> With Us  
         </h2>
-        <p className={`${styles.paragraph} max-w-[470px]`}>
-          Paragraph under the logo
+        <p className={`${styles.paragraph} max-w-[470px] text-center`}>
+            Your peace of mind matters to us. Our bank is committed to protecting your assets through robust security protocols and proactive fraud prevention measures.
         </p>
           </div>
-      </div>
-
-      <div className={`${layout.sectionImg} flex-col`}>
-        {features.map((feature) => (
-          <FeatureCard key={feature.id} {...feature} />
-        ))}
       </div>
 
     </section>

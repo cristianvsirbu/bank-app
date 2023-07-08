@@ -42,13 +42,14 @@ const Hero = () => (
             className={`
             text-dimWhite
             ml-2
+            font-semibold
             text-[13px]
             md:text-[16px]
             lg:text-[18px] 
         `}>
             <span className="text-white font-neue">50% </span>
             DISCOUNT FOR {" "}
-            <span className="text-white font-neue"> 1 MONTH</span>
+            <span className="text-white font-neue"> 1 YEAR</span>
           </p>
         </div>
 
@@ -71,13 +72,13 @@ const Hero = () => (
             ${styles.paragraph} 
             max-w-[600px] 
             md:max-w-[510px] 
+            text-[15px] 
             sm:text-[18px] 
             md:text-[20px] 
             lg:text-[22px]
             xl:text-[24px] 
             text-center 
             lg:text-left 
-            text-[15px] 
             text-dimWhite
         `}>
           With a commitment to excellence and personalized service, we strive to be your financial partner for life. Experience seamless banking solutions, expert advice, and a range of innovative products tailored to meet your unique needs.
@@ -97,8 +98,7 @@ const Hero = () => (
             lg:relative
             bottom-[390px]
             lg:bottom-[410px]
-            box-shadow-30
-            "
+           "
         />
       </div>
     </div>
