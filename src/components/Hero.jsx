@@ -71,12 +71,10 @@ const Hero = () => (
           className={`
             ${styles.paragraph} 
             max-w-[600px] 
-            md:max-w-[510px] 
+            md:max-w-[421px] 
             text-[15px] 
             sm:text-[18px] 
-            md:text-[20px] 
-            lg:text-[22px]
-            xl:text-[24px] 
+            md:text-[20px]            
             text-center 
             lg:text-left 
             text-dimWhite

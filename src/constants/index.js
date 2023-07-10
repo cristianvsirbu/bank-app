@@ -1,4 +1,4 @@
-import { people01, people02, people03, facebook, instagram, linkedin, twitter, amazon, crunchyroll, oracle, tidal,  send, shield, star, reward } from "../assets";
+import { people01, people02, people03, facebook, instagram, linkedin, twitter, amazon, crunchyroll, oracle, tidal, send, shield, reward } from "../assets";
 
 export const navLinks = [
     {
@@ -18,6 +18,7 @@ export const navLinks = [
         title: "Partners",
     },
 ];
+
 
 export const features = [
     {
@@ -43,50 +44,35 @@ export const features = [
     },
 ];
 
+
 export const feedback = [
     {
         id: "feedback-1",
         content:
-            "Money is only a tool. It will take you wherever you wish, but it will not replace you as the driver.",
-        name: "Jessy Huang",
+            "Bluestar Bank has been a game-changer for me. Their lightning-fast transactions and efficient services have saved me valuable time. With their top-notch security measures, I have complete peace of mind knowing my funds are safe.",
+        name: "Jessy H",
         title: "User",
         img: people01,
     },
     {
         id: "feedback-2",
         content:
-            "Money makes your life easier. If you're lucky to have it, you're lucky.",
-        name: "John Murray",
-        title: "Founder & Leader",
+            "As the founder of Bluestar Bank, I am immensely proud of what we have accomplished. Our unwavering focus on speed and security has enabled us to redefine the banking experience. Together, we are building a brighter financial future.",
+        name: "John M",
+        title: "Founder",
         img: people02,
     },
     {
         id: "feedback-3",
         content:
-            "It is usually people in the money business, finance, and international trade that are really rich.",
-        name: "Kenn Gallagher",
-        title: "Founder",
+            "I've been a loyal customer of Bluestar Bank for years, and I can confidently say that their speed, security, and reliability are unmatched. Whether it's quick transaction processing or their robust online banking platform, I always feel confident and in control of my finances.",
+        name: "Kenn G",
+        title: "User",
         img: people03,
     },
 ];
 
-export const stats = [
-    {
-        id: "stats-1",
-        title: "User Active",
-        value: "3800+",
-    },
-    {
-        id: "stats-2",
-        title: "Trusted by Company",
-        value: "230+",
-    },
-    {
-        id: "stats-3",
-        title: "Transaction",
-        value: "$230M+",
-    },
-];
+
 
 export const footerLinks = [
     {
@@ -140,7 +126,7 @@ export const footerLinks = [
         ],
     },
     {
-        title: "Partner",
+        title: "Partners",
         links: [
             {
                 name: "Our Partner",
