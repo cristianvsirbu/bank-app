@@ -10,9 +10,7 @@ const Mobile = () => {
         screenshots
         mb-10
         sm:mb-0' />
-        <img src={screenshot2} alt='screenshot2' className='w-full sm:max-w-[250px] md:max-w-[200px] lg:max-w-[250px] screenshots
-        
-        ' />
+        <img src={screenshot2} alt='screenshot2' className='w-full sm:max-w-[250px] md:max-w-[200px] lg:max-w-[250px] screenshots' />
       </div>
       <div className={`flex-1 flex-col flex items-center md:items-start md:ml-5`}>
         <h2 className={`${styles.heading2} text-center md:text-start mt-5 md:mt-0`}>We Are In Your Pocket</h2>

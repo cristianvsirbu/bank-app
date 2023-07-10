@@ -17,9 +17,9 @@
 :root {
   min-width: 280px;
   --black-gradient: linear-gradient(144.39deg,
-      #ffffff -278.56%,
-      #6d6d6d -78.47%,
-      #11101d 91.61%);
+      #cccccc -278.56%,
+      #1e2d3f -78.47%,
+      #0c1219 91.61%);
   --card-shadow: 0px 20px 100px -10px rgba(66, 71, 91, 0.1);
 }
 
@@ -51,8 +51,6 @@
   background: linear-gradient(-168.39deg,
       #11303a 0%,
       #070a0c 100%);
-
-
 }
 
 .bg-gray-gradient {
@@ -131,21 +129,6 @@
   filter: blur(123px);
 }
 
-.pink__gradient {
-  background: linear-gradient(90deg, #f4c4f3 0%, #fc67fa 100%);
-  filter: blur(900px);
-}
-
-.white__gradient {
-  background: rgba(255, 255, 255, 0.6);
-  filter: blur(750px);
-}
-
-.discount__gradient {
-  background: #05F6FA;
-  filter: blur(30px);
-  opacity: 0.95;
-}
 
 .card__blur {
   width: 12rem;

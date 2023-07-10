@@ -79,24 +79,12 @@ export const footerLinks = [
         title: "Useful Links",
         links: [
             {
-                name: "Content",
-                link: "https://www.hoobank.com/content/",
-            },
-            {
                 name: "How it Works",
-                link: "https://www.hoobank.com/how-it-works/",
-            },
-            {
-                name: "Create",
-                link: "https://www.hoobank.com/create/",
-            },
-            {
-                name: "Explore",
-                link: "https://www.hoobank.com/explore/",
+                link: "https://www.bluestarbank.com/how-it-works/",
             },
             {
                 name: "Terms & Services",
-                link: "https://www.hoobank.com/terms-and-services/",
+                link: "https://www.hoobbluestarbank/terms-and-services/",
             },
         ],
     },
@@ -105,23 +93,19 @@ export const footerLinks = [
         links: [
             {
                 name: "Help Center",
-                link: "https://www.hoobank.com/help-center/",
-            },
-            {
-                name: "Partners",
-                link: "https://www.hoobank.com/partners/",
+                link: "https://www.bluestarbank.com/help-center/",
             },
             {
                 name: "Suggestions",
-                link: "https://www.hoobank.com/suggestions/",
+                link: "https://www.bluestarbank.com/suggestions/",
             },
             {
                 name: "Blog",
-                link: "https://www.hoobank.com/blog/",
+                link: "https://www.bluestarbank.com/blog/",
             },
             {
                 name: "Newsletters",
-                link: "https://www.hoobank.com/newsletters/",
+                link: "https://www.bluestarbank.com/newsletters/",
             },
         ],
     },
@@ -129,12 +113,12 @@ export const footerLinks = [
         title: "Partners",
         links: [
             {
-                name: "Our Partner",
-                link: "https://www.hoobank.com/our-partner/",
+                name: "Our Partners",
+                link: "https://www.bluestarbank/our-partner/",
             },
             {
                 name: "Become a Partner",
-                link: "https://www.hoobank.com/become-a-partner/",
+                link: "https://www.bluestarbank/become-a-partner/",
             },
         ],
     },

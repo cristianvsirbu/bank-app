@@ -5,7 +5,7 @@ export const theme = {
   extend: {
     colors: {
       primary: "#00040f",
-      secondary: "#00f6ff",
+      secondary: "#4ea0ca",
       dimWhite: "#848484",
       dimBlue: "#233e45",
       navbar: "#04060d",

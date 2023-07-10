@@ -21,6 +21,7 @@ const Navbar = () => {
               md:text-[18px]
               lg:text-[20px]
              text-white
+             hover:text-secondary
               mr-6
               md:mr-10
               ${index === navLinks.length - 1 ? 'mr-0' : 'mr-10'}`}>

@@ -1,7 +1,7 @@
 import { useEffect, useRef } from 'react';
 import styles from '../style';
 
-const CardAnimation = () => {
+const BlurCardAnimation = () => {
     const elementRef = useRef(null);
 
     useEffect(() => {
@@ -24,4 +24,4 @@ const CardAnimation = () => {
     return <span ref={elementRef} className={`${styles.heading2} card__blur absolute box-shadow-20`} />;
 };
 
-export default CardAnimation;
+export default BlurCardAnimation;
