@@ -7,6 +7,7 @@ export const theme = {
       primary: "#00040f",
       secondary: "#4ea0ca",
       dimWhite: "#848484",
+      dimmerWhite: "#2b2b2b",
       dimBlue: "#233e45",
       navbar: "#04060d",
     },

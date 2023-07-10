@@ -1,27 +1,70 @@
-import { useEffect, useRef } from 'react';
-import styles from '../style';
+import React, { useEffect, useRef, useState } from 'react';
+import PropTypes from 'prop-types';
 
-const BlurCardAnimation = () => {
-    const elementRef = useRef(null);
+const CardAnimation = ({ children, interval, animationClassName }) => {
+    const elementsRef = useRef([]);
+    const [isReady, setIsReady] = useState(false);
 
     useEffect(() => {
-        const element = elementRef.current;
-
         const observer = new IntersectionObserver((entries) => {
             entries.forEach((entry) => {
                 if (entry.isIntersecting) {
-                    element.classList.add('safe');
-                    observer.unobserve(entry.target);
+                    const targetElement = entry.target;
+                    const index = elementsRef.current.indexOf(targetElement);
+                    const animationDelay = index * interval;
+
+                    const animateElement = () => {
+                        targetElement.classList.add(animationClassName);
+                        observer.unobserve(targetElement);
+                    };
+
+                    if (!targetElement.classList.contains(animationClassName)) {
+                        setTimeout(animateElement, animationDelay);
+                    }
                 }
             });
         });
-        observer.observe(element);
+
+        if (isReady && elementsRef.current.length > 0) {
+            elementsRef.current.forEach((element) => {
+                observer.observe(element);
+            });
+        }
+
         return () => {
             observer.disconnect();
         };
+    }, [isReady, animationClassName, interval]);
+
+    useEffect(() => {
+        window.addEventListener('load', () => {
+            setIsReady(true);
+        });
+
+        return () => {
+            window.removeEventListener('load', () => {
+                setIsReady(true);
+            });
+        };
     }, []);
 
-    return <span ref={elementRef} className={`${styles.heading2} card__blur absolute box-shadow-20`} />;
+    useEffect(() => {
+        if (isReady && elementsRef.current.length > 0) {
+            elementsRef.current.forEach((element) => {
+                element.style.opacity = 0;
+            });
+        }
+    }, [isReady]);
+
+    return React.Children.map(children, (child, index) =>
+        React.cloneElement(child, { ref: (el) => (elementsRef.current[index] = el) })
+    );
 };
 
-export default BlurCardAnimation;
+CardAnimation.propTypes = {
+    children: PropTypes.node.isRequired,
+    interval: PropTypes.number.isRequired,
+    animationClassName: PropTypes.string.isRequired,
+};
+
+export default CardAnimation;

@@ -3,8 +3,8 @@ import { footerLinks, socialMedia } from "../constants"
 
 const Footer = () => {
   return (
-    <section className={`flex flex-col`}>
-      <div className={`flex-col md:flex-row mb-8 flex`}>
+    <section className={`flex flex-col border-t-[1px] border-dimmerWhite`}>
+      <div className={`flex-col md:flex-row my-8 flex`}>
         <div className="flex flex-1 flex-col items-center md:items-start md:mb-8">
           <img src={logo} alt="bluestar bank" className="h-[45px] flex object-contain mt-8 sm:mt-0" />
         </div>
@@ -25,7 +25,7 @@ const Footer = () => {
           ))}
         </div>
       </div>
-      <div className="w-full flex sm:flex-row flex-col py-6 border-t-[1px] border-dimWhite justify-between items-center ">
+      <div className="w-full flex sm:flex-row flex-col py-6 border-t-[1px] border-dimmerWhite justify-between items-center ">
         <p className="font-neue font-normal text-[12px] text-dimWhite">
           Bluestar Bank 2023. All rights reserved
         </p>

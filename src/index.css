@@ -58,6 +58,11 @@
       rgba(255, 255, 255, 0) -341.94%,
       #14101d 95.11%);
 }
+.discount__gradient-blur {
+  background: #05F6FA;
+  filter: blur(30px);
+  opacity: 0.95;
+}
 
 .bg-discount-gradient {
   background: linear-gradient(125deg, rgba(51, 187, 207, 0.43) 0%, rgba(37, 59, 128, 0.69) 100%);
@@ -80,16 +85,18 @@
 .stats {
   -webkit-animation: slide-top 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: slide-top 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation-delay: 1s;
+  animation-delay: 0.8s;
 }
 
 @-webkit-keyframes slide-top {
   0% {
+    opacity: 0;
     -webkit-transform: translateY(100px);
     transform: translateY(100px);
   }
 
   100% {
+    opacity: 1;
     -webkit-transform: translateY(0);
     transform: translateY(0);
   }
@@ -97,11 +104,13 @@
 
 @keyframes slide-top {
   0% {
+    opacity: 0;
     -webkit-transform: translateY(100px);
     transform: translateY(100px);
   }
 
   100% {
+    opacity: 1;
     -webkit-transform: translateY(0);
     transform: translateY(0);
   }
@@ -230,5 +239,21 @@
   .screenshots {
     box-shadow: none;
     @apply box-shadow-70
+  }
+}
+
+
+.animate {
+  opacity: 0;
+  animation: fadeIn 0.5s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
   }
 }

@@ -1,5 +1,6 @@
 import styles from "../style"
 import { sale, card } from "../assets"
+import CardAnimation from "./CardAnimation"
 
 const Hero = () => (
   <section className={` flex justify-center lg:justify-start lg:flex-col
@@ -32,7 +33,7 @@ const Hero = () => (
         box-shadow-10
       ">
 
-          <span className="discount__gradient w-8 h-8 absolute animate-pulse" />
+          <span className="discount__gradient-blur w-8 h-8 absolute animate-pulse" />
             <img
               src={sale}
               alt="discount"
@@ -52,7 +53,7 @@ const Hero = () => (
             <span className="text-white font-neue"> 1 YEAR</span>
           </p>
         </div>
-
+<CardAnimation interval={500} animationClassName="animate">
         <h1
           className="
             flex-1
@@ -81,6 +82,8 @@ const Hero = () => (
         `}>
           With a commitment to excellence and personalized service, we strive to be your financial partner for life. Experience seamless banking solutions, expert advice, and a range of innovative products tailored to meet your unique needs.
         </p>
+</CardAnimation>
+        <CardAnimation interval={500} animationClassName="sidebar">
         <img
           src={card}
           alt="card"
@@ -97,7 +100,8 @@ const Hero = () => (
             bottom-[390px]
             lg:bottom-[410px]
            "
-        />
+          />
+</CardAnimation>
       </div>
     </div>
   </section>

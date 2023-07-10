@@ -1,5 +1,5 @@
-import { users_dark, trust_dark, transactions_dark, graph } from '../assets'
-
+import { users_dark, trust_dark, transactions_dark } from '../assets'
+import CardAnimation from './CardAnimation'
 const Stats = () => {
 
   return (
@@ -13,10 +13,11 @@ const Stats = () => {
             grow-0
             "
     >
+      <CardAnimation interval={800} animationClassName='animate'>
       <img src={users_dark} alt="users" className="sm:w-[30%] box-shadow-50" />
       <img src={trust_dark} alt="trust" className="sm:w-[30%] box-shadow-50" />
       <img src={transactions_dark} alt="transactions" className="sm:w-[30%] box-shadow-50" />
-      
+      </CardAnimation>
     </div>
   );
 };
