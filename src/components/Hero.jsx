@@ -88,9 +88,10 @@ const Hero = () => (
           src={card}
           alt="card"
           className="
-            w-[500px] 
+            w-[500px]
             md:w-[550px] 
-            lg:w-[650px] 
+            lg:w-[650px]
+            lg:h-[408px] 
             mt-8 
             lg:mt-0
             self-center

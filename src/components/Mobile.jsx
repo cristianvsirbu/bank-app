@@ -7,11 +7,11 @@ const Mobile = () => {
     <section className={`${layout.section}`}>
       <div className={`${layout.sectionImg} flex-col sm:flex-row sm:justify-evenly`}>
         <CardAnimation interval={500} animationClassName='stats'>
-          <img src={screenshot1} alt='screenshot1' className='w-full sm:max-w-[250px] md:max-w-[200px] lg:max-w-[250px] 
+          <img src={screenshot1} alt='screenshot1' className='w-[270px] h-[590px] md:max-lg:w-[200px] md:max-lg:h-[432px]
         screenshots
         mb-10
         sm:mb-0' />
-          <img src={screenshot2} alt='screenshot2' className='w-full sm:max-w-[250px] md:max-w-[200px] lg:max-w-[250px] screenshots' />
+          <img src={screenshot2} alt='screenshot2' className='w-[270px] h-[590px] md:max-lg:w-[200px] md:max-lg:h-[432px] screenshots' />
         </CardAnimation>
       </div>
       <div className={`flex-1 flex-col flex items-center md:items-start md:ml-5`}>
@@ -23,7 +23,7 @@ const Mobile = () => {
         </CardAnimation>
         <div className='flex mt-5 w-full justify-center md:justify-start flex-col sm:flex-row'>
           <CardAnimation interval={500} animationClassName='stats'>
-            <img src={apple} alt="apple" className='sm:mr-10 mr-0 mb-10 sm:mb-0 sm:h-[4rem] stores' />
+            <img src={apple} alt="apple" className='sm:mr-10 mr-0 mb-10 sm:mb-0 sm:h-[4rem] stores ' />
             <img src={google} alt="google" className='sm:h-[4rem] stores' />
           </CardAnimation>
         </div>

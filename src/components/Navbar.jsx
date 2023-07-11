@@ -37,7 +37,7 @@ const Navbar = () => {
         <img
           src={toggle ? close : menu}
           alt='menu'
-          className='w-[28px] h-[28px] object-contain'
+          className='w-[42px] h-[42px] object-contain'
           onClick={() => setToggle((prev) => !prev)}
         />
 
@@ -53,15 +53,15 @@ const Navbar = () => {
               text-[20px]
              text-white
               mb-3`}>
-                  <a href={`#${nav.id}`}>
-                    {nav.title}
-                  </a>
+                <a href={`#${nav.id}`}>
+                  {nav.title}
+                </a>
               </li>
             ))}
-          <button className='button__style w-[6rem] h-[2.5rem] font-neue font-bold text-white'>Sign Up</button>
-        </ul>
+            <button className='button__style w-[6rem] h-[2.5rem] font-neue font-bold text-white'>Sign Up</button>
+          </ul>
+        </div>
       </div>
-    </div>
     </nav >
   )
 }
