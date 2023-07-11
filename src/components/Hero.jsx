@@ -1,6 +1,8 @@
 import styles from "../style"
 import { sale, card } from "../assets"
 import CardAnimation from "./CardAnimation"
+import Exchange from "./Exchange";
+
 
 const Hero = () => (
   <section className={` flex justify-center lg:justify-start lg:flex-col
@@ -104,6 +106,7 @@ const Hero = () => (
           />
 </CardAnimation>
       </div>
+      <Exchange />
     </div>
   </section>
 )

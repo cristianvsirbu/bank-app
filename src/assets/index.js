@@ -24,6 +24,9 @@ import trust_dark from '../assets/trust_dark.webp';
 import apple from '../assets/apple.webp';
 import google from '../assets/google.webp';
 import reward from '../assets/reward.webp';
+import usd from '../assets/usd.png';
+import gbp from '../assets/gbp.png';
+import ron from '../assets/ron.png';
 
 export {
     people01,
@@ -51,5 +54,8 @@ export {
     trust_dark,
     apple,
     google,
-    reward
+    reward,
+    usd,
+    gbp,
+    ron
 }
