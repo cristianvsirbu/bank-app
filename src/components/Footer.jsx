@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="flex flex-1 flex-col items-center md:items-start md:mb-8">
           <img src={logo} alt="bluestar bank" className="h-[45px] flex object-contain mt-8 sm:mt-0" />
         </div>
-        <div className="flex-[1.5] w-full flex flex-row justify-center sm:justify-between text-center sm:text-start flex-wrap md:mt-0 mt-10">
+        <div key={footerLinks.key} className="flex-[1.5] w-full flex flex-row justify-center sm:justify-between text-center sm:text-start flex-wrap md:mt-0 mt-10">
           {footerLinks.map((footerLink) => (
             <div key={footerLink.key} className="flex flex-col ss:my-0 my-4 min-w-[150px]">
               <h4 className="font-neue font-medium text-[18px] text-white">

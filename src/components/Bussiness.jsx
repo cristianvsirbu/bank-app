@@ -1,6 +1,6 @@
 import styles from '../style'
 import PinAnimation from './PinAnimation'
-import BlurCardAnimation from './BlurCardAnimation'
+
 
 // eslint-disable-next-line react/prop-types
 
@@ -10,7 +10,10 @@ const Bussiness = () => {
       <div className="my-32">
         <div className="flex flex-col items-center">
           <h2 className={`${styles.heading2} text-center leading-relaxed flex flex-col justify-center items-center whitespace-nowrap`}>
-            Your Money Are <br /><BlurCardAnimation /><PinAnimation />
+            Your Money Are <br />
+          </h2>
+          <PinAnimation />
+          <h2 className={`${styles.heading2} text-center leading-relaxed flex flex-col justify-center items-center whitespace-nowrap`}>
             With Us
           </h2>
           <p className={`${styles.paragraph} max-w-[470px] text-center`}>

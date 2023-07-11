@@ -17,7 +17,9 @@ const Mobile = () => {
       <div className={`flex-1 flex-col flex items-center md:items-start md:ml-5`}>
         <CardAnimation interval={500} animationClassName='animate'>
           <h2 className={`${styles.heading2} text-center md:text-start mt-5 md:mt-0`}>We Are In Your Pocket</h2>
-          <p className={`${styles.paragraph} text-center md:text-start md: text-[1rem]`}>Introducing our cutting-edge banking app, designed to revolutionize the way you manage your finances. Our app provides a seamless and secure platform that puts the power of banking right at your fingertips. With intuitive features and a user-friendly interface, you can effortlessly navigate through your accounts, check your balances, make payments, transfer funds, and even set personalized savings goals.</p>
+          <p className={`${styles.paragraph} text-center md:text-start md: text-[1rem]`}>
+            Introducing our cutting-edge banking app, designed to revolutionize the way you manage your finances. Our app provides a seamless and secure platform that puts the power of banking right at your fingertips. With intuitive features and a user-friendly interface, you can effortlessly navigate through your accounts, check your balances, make payments, transfer funds, and even set personalized savings goals.
+          </p>
         </CardAnimation>
         <div className='flex mt-5 w-full justify-center md:justify-start flex-col sm:flex-row'>
           <CardAnimation interval={500} animationClassName='stats'>

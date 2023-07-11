@@ -8,7 +8,7 @@ const Navbar = () => {
 
   return (
     <nav className='w-full flex py-6 justify-between items-center navbar'>
-      <img src={logo} alt='bluestar' className='sm:w-[10rem] sm:h-[2.75rem] w-[9rem] h-[2.63rem]' />
+      <img src={logo} alt='bluestar' className='sm:w-[10rem] sm:h-[2.91rem] w-[9rem] h-[2.63rem]' />
       <ul className='list-none sm:flex hidden justify-end items-center flex-1'>
         {navLinks.map((nav, index) => (
           <li
@@ -43,7 +43,7 @@ const Navbar = () => {
 
         <div className={`${toggle ? 'flex' : 'hidden'} p-5 bg-black-gradient-2 absolute top-20 right-5 mx-2 my-2 min-w-[140px] rounded-xl sidebar z-10`}>
           <ul className='list-none flex flex-col justify-end items-center flex-1'>
-            {navLinks.map((nav, index) => (
+            {navLinks.map((nav) => (
               <li
                 key={nav.id}
                 className={`

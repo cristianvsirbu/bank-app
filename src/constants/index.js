@@ -1,4 +1,4 @@
-import { people01, people02, people03, facebook, instagram, linkedin, twitter, amazon, crunchyroll, oracle, tidal, send, shield, reward } from "../assets";
+import { people01, people02, people03, facebook, instagram, linkedin, twitter, amazon, crunchyroll, oracle, tidal } from "../assets";
 
 export const navLinks = [
     {
@@ -20,29 +20,6 @@ export const navLinks = [
 ];
 
 
-export const features = [
-    {
-        id: "feature-1",
-        icon: reward,
-        title: "Rewards",
-        content:
-            "The best credit cards offer some tantalizing combinations of promotions and prizes",
-    },
-    {
-        id: "feature-2",
-        icon: shield,
-        title: "100% Secured",
-        content:
-            "We take proactive steps make sure your information and transactions are secure.",
-    },
-    {
-        id: "feature-3",
-        icon: send,
-        title: "Balance Transfer",
-        content:
-            "A balance transfer credit card can save you a lot of money in interest charges.",
-    },
-];
 
 
 export const feedback = [
@@ -77,6 +54,7 @@ export const feedback = [
 export const footerLinks = [
     {
         title: "Useful Links",
+        key: "usefulLinks",
         links: [
             {
                 name: "How it Works",
@@ -90,6 +68,7 @@ export const footerLinks = [
     },
     {
         title: "Community",
+        key: "community",
         links: [
             {
                 name: "Help Center",
@@ -111,6 +90,7 @@ export const footerLinks = [
     },
     {
         title: "Partners",
+        key: "partners",
         links: [
             {
                 name: "Our Partners",

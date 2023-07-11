@@ -13,7 +13,7 @@ const Stats = () => {
             grow-0
             "
     >
-      <CardAnimation interval={800} animationClassName='animate'>
+      <CardAnimation interval={500} animationClassName='animate'>
       <img src={users_dark} alt="users" className="sm:w-[30%] box-shadow-50" />
       <img src={trust_dark} alt="trust" className="sm:w-[30%] box-shadow-50" />
       <img src={transactions_dark} alt="transactions" className="sm:w-[30%] box-shadow-50" />

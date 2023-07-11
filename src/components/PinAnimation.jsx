@@ -1,4 +1,6 @@
-import  { useEffect, useState, useRef } from 'react';
+import { useEffect, useState, useRef } from 'react';
+import styles from '../style';
+import BlurCardAnimation from './BlurCardAnimation';
 
 const PinAnimation = () => {
     const [transformedWord, setTransformedWord] = useState('Safe');
@@ -40,7 +42,7 @@ const PinAnimation = () => {
         };
     }, []);
 
-    return <h2 ref={wordRef}>{transformedWord}</h2>;
+    return <h2 ref={wordRef} className={`${styles.heading2} text-center leading-relaxed flex flex-col justify-center items-center whitespace-nowrap`}><BlurCardAnimation />{transformedWord}</h2>;
 };
 
 export default PinAnimation;

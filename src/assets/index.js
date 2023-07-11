@@ -1,40 +1,34 @@
-import people01 from '../assets/people01.png';
-import people02 from '../assets/people02.png';
-import people03 from '../assets/people03.png';
-import amazon from '../assets/amazon.png';
-import crunchyroll from '../assets/crunchyroll.png';
-import oracle from '../assets/oracle.png';
-import tidal from '../assets/tidal.png';
-import send from '../assets/send.png';
-import shield from '../assets/shield.png';
-import star from '../assets/star.png';
-import menu from '../assets/menu.png';
-import close from '../assets/close.png';
-import logo from '../assets/logo.png';
-import quotations from '../assets/quotations.png';
-import sale from '../assets/sale.png';
-import screenshot1 from '../assets/screenshot1.png';
-import screenshot2 from '../assets/screenshot2.png';
-import dashboard from '../assets/dashboard.png';
-import facebook from '../assets/facebook.png';
-import instagram from '../assets/instagram.png';
-import linkedin from '../assets/linkedin.png';
-import twitter from '../assets/twitter.png';
-import card from '../assets/card.png';
-import users_dark from '../assets/users_dark.png';
-import transactions_dark from '../assets/transactions_dark.png';
-import trust_dark from '../assets/trust_dark.png';
-import apple from '../assets/apple.png';
-import google from '../assets/google.png';
-import reward from '../assets/reward.png';
+import people01 from '../assets/people01.webp';
+import people02 from '../assets/people02.webp';
+import people03 from '../assets/people03.webp';
+import amazon from '../assets/amazon.webp';
+import crunchyroll from '../assets/crunchyroll.webp';
+import oracle from '../assets/oracle.webp';
+import tidal from '../assets/tidal.webp';
+import menu from '../assets/menu.webp';
+import close from '../assets/close.webp';
+import logo from '../assets/logo.webp';
+import quotations from '../assets/quotations.webp';
+import sale from '../assets/sale.webp';
+import screenshot1 from '../assets/screenshot1.webp';
+import screenshot2 from '../assets/screenshot2.webp';
+import dashboard from '../assets/dashboard.webp';
+import facebook from '../assets/facebook.webp';
+import instagram from '../assets/instagram.webp';
+import linkedin from '../assets/linkedin.webp';
+import twitter from '../assets/twitter.webp';
+import card from '../assets/card.webp';
+import users_dark from '../assets/users_dark.webp';
+import transactions_dark from '../assets/transactions_dark.webp';
+import trust_dark from '../assets/trust_dark.webp';
+import apple from '../assets/apple.webp';
+import google from '../assets/google.webp';
+import reward from '../assets/reward.webp';
 
 export {
     people01,
     people02, 
     people03,   
-    send, 
-    shield, 
-    star,
     menu,
     close,
     logo,
