@@ -5,7 +5,7 @@ import Exchange from "./Exchange";
 
 
 const Hero = () => (
-  <section className={` flex justify-center lg:justify-start lg:flex-col
+  <section className={` flex justify-center lg:justify-start     flex-col
     lg:pb-0
     ${styles.paddingY} 
   `}>
@@ -36,11 +36,11 @@ const Hero = () => (
       ">
 
           <span className="discount__gradient-blur w-8 h-8 absolute animate-pulse" />
-            <img
-              src={sale}
-              alt="discount"
-              className="w-[22px] sm:w-[32px]" />
-          
+          <img
+            src={sale}
+            alt="discount"
+            className="w-[22px] sm:w-[32px]" />
+
           <p
             className={`
             text-dimWhite
@@ -55,9 +55,9 @@ const Hero = () => (
             <span className="text-white font-neue"> 1 YEAR</span>
           </p>
         </div>
-<CardAnimation interval={500} animationClassName="animate">
-        <h1
-          className="
+        <CardAnimation interval={500} animationClassName="animate">
+          <h1
+            className="
             flex-1
             font-neue
             font-bold
@@ -67,11 +67,11 @@ const Hero = () => (
             text-[50px]
             text-white
         ">
-          We Grow <br className="sm:max-lg:hidden" /> With You
-        </h1>
+            We Grow <br className="sm:max-lg:hidden" /> With You
+          </h1>
 
-        <p
-          className={`
+          <p
+            className={`
             ${styles.paragraph} 
             max-w-[600px] 
             md:max-w-[421px] 
@@ -82,14 +82,14 @@ const Hero = () => (
             lg:text-left 
             text-dimWhite
         `}>
-          With a commitment to excellence and personalized service, we strive to be your financial partner for life. Experience seamless banking solutions, expert advice, and a range of innovative products tailored to meet your unique needs.
-        </p>
-</CardAnimation>
+            With a commitment to excellence and personalized service, we strive to be your financial partner for life. Experience seamless banking solutions, expert advice, and a range of innovative products tailored to meet your unique needs.
+          </p>
+        </CardAnimation>
         <CardAnimation interval={500} animationClassName="sidebar">
-        <img
-          src={card}
-          alt="card"
-          className="
+          <img
+            src={card}
+            alt="card"
+            className="
             w-[500px]
             md:w-[550px] 
             lg:w-[650px]
@@ -104,8 +104,13 @@ const Hero = () => (
             lg:bottom-[410px]
            "
           />
-</CardAnimation>
+        </CardAnimation>
       </div>
+
+
+    </div>
+
+    <div className={`flex flex-col justify-center`}>
       <Exchange />
     </div>
   </section>

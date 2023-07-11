@@ -1,8 +1,6 @@
 import axios from 'axios';
-import React from 'react';
 import { useState, useEffect } from 'react';
 import currencies from './currenciesConfig.js';
-import styles from '../style';
 import usdImage from '../assets/usd.png';
 import gbpImage from '../assets/gbp.png';
 import ronImage from '../assets/ron.png';
@@ -46,7 +44,7 @@ const Exchange = () => {
 
     if (responseData) {
         const currentDate = new Date();
-        const formattedDate = currentDate.toLocaleDateString('en-US', {
+        const formattedDate = currentDate.toLocaleDateString('en-GB', {
             weekday: 'long',
             year: 'numeric',
             month: 'long',
@@ -72,19 +70,25 @@ const Exchange = () => {
 
         return (
 
-            <div key={uuid()} className={`flex flex-col md:flex-row w-full items-center md:justify-between py-10 ${styles.paragraph}`}>
-                <h1>The Exchange Rates for {formattedDate} are:</h1>
-                {Object.entries(filteredCurrencies).map(([currency, rate]) => (
-                    <React.Fragment key={currency}>
-                        <h1 className={`text-dimWhite font-bold text-xl`} key={"heading"}>
-                            1 EUR:
-                        </h1>
-                        <h2 className='text-white' key={uuid()}>
-                            {rate.rate} {currency}
-                        </h2>
-                        <img key={currency} src={rate.image} alt={currency} className='w-[30px] h-[30px]' />
-                    </React.Fragment>
-                ))}
+            <div key={uuid()} className={`flex flex-col py-20 w-full items-center font-neue`}>
+                <p className='text-[18px] text-dimWhite '>The Exchange Rates for</p>
+                <p className='text-white font-bold text-[20px]'>{formattedDate} :
+                </p>
+                <div className='flex flex-col sm:flex-row w-full justify-between'>
+                    {Object.entries(filteredCurrencies).map(([currency, rate]) => (
+                        <div key={currency} className='w-[272px] h-[113px] py-6 px-8 mt-[40px] box-shadow-50 flex flex-row justify-start items-center bg-[#10151a] cursor-pointer'>
+                            <img key={currency} src={rate.image} alt={currency} className='w-[45px] h-[45px] ml-0 mr-[20px]' />
+                            <div className='leading-[24px]'>
+                                <p className={`text-dimWhite  text-[24px]`} key={"heading"}>
+                                    1 EUR:
+                                </p>
+                                <h2 className='text-white text-[21px] font-bold' key={uuid()}>
+                                    {rate.rate} {currency}
+                                </h2>
+                            </div>
+                        </div>
+                    ))}
+                </div>
             </div>
         );
     }
