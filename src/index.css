@@ -66,6 +66,7 @@
   opacity: 0.95;
 }
 
+
 .bg-discount-gradient {
   background: linear-gradient(125deg, rgba(51, 187, 207, 0.43) 0%, rgba(37, 59, 128, 0.69) 100%);
 }
@@ -157,7 +158,6 @@
   background: linear-gradient(217deg, #59c8cb 10%, rgb(5, 75, 107) 90%);
   box-shadow: -8px -8px 16px 0px #435c6b35, 8px 8px 16px 0px #040607f5;
 }
-
 
 
 @layer utilities {

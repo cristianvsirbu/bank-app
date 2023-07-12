@@ -31,7 +31,7 @@ const Navbar = () => {
           </li>
 
         ))}
-        <button className='button__style w-[6rem] h-[2.5rem] font-neue font-bold text-white'>Sign Up</button>
+        <button className='button__style w-[6rem] h-[2.5rem] font-neue font-bold text-white hover:button__gradient-blur'>Sign Up</button>
       </ul>
       <div className='sm:hidden flex flex-1 justify-end items-center'>
         <img

@@ -5,9 +5,9 @@ import Exchange from "./Exchange";
 
 
 const Hero = () => (
-  <section className={` flex justify-center lg:justify-start     flex-col
+  <section className={`flex justify-center lg:justify-start flex-col
     lg:pb-0
-    ${styles.paddingY} 
+    pt-10 
   `}>
     <div className={`
       flex
@@ -15,10 +15,12 @@ const Hero = () => (
       xl:px-0 
       sm:px-16 
       px-6
+      lg:h-0
+      lg:pb-[33rem]
+      lg:pt-[4rem]
     `}>
 
       <div className="flex flex-col items-center lg:items-start">
-
         <div className="
         flex  
         items-center
@@ -106,10 +108,7 @@ const Hero = () => (
           />
         </CardAnimation>
       </div>
-
-
     </div>
-
     <div className={`flex flex-col justify-center`}>
       <Exchange />
     </div>

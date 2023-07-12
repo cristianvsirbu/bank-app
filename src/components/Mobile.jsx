@@ -4,7 +4,7 @@ import CardAnimation from './CardAnimation';
 
 const Mobile = () => {
   return (
-    <section className={`${layout.section}`}>
+    <section id='mobile' className={`${layout.section}`}>
       <div className={`${layout.sectionImg} flex-col sm:flex-row sm:justify-evenly`}>
         <CardAnimation interval={500} animationClassName='stats'>
           <img src={screenshot1} alt='screenshot1' className='w-[270px] h-[590px] md:max-lg:w-[200px] md:max-lg:h-[432px]
