@@ -6,7 +6,7 @@ import PinAnimation from './PinAnimation'
 
 const Bussiness = () => {
   return (
-    <section  >
+    <section>
       <div className="my-[4rem]">
         <div className="flex flex-col items-center">
           <h2 className={`${styles.heading2} text-center leading-relaxed flex flex-col justify-center items-center whitespace-nowrap`}>

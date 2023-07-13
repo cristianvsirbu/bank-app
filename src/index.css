@@ -150,7 +150,7 @@
   /* border: 1px solid rgba(92, 92, 92, 0.50); */
   background: linear-gradient(111deg, rgba(212, 212, 212, 0.201) 0%, rgba(0, 0, 0, 0.007) 100%);
   backdrop-filter: blur(4px);
-  border: 1px solid #5c5c5c46;
+  border: 1px solid #71717146;
 }
 
 .button__style {

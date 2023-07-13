@@ -7,11 +7,6 @@ import ronImage from '../assets/ron.png';
 import { v4 as uuid } from 'uuid';
 import CardAnimation from './CardAnimation.jsx';
 
-
-
-
-
-
 const Exchange = () => {
     const [responseData, setResponseData] = useState(null);
     const [isRequestComplete, setIsRequestComplete] = useState(false);
