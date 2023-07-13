@@ -2,7 +2,8 @@
 <img src="src/assets/screenshots/ScreenshotPC.png"/>
 
 
-<p aling="center"> A fully responsive and visually appealing one-page banking application, designed and developed with modern web technologies. This project showcases my proficiency in HTML, CSS, Tailwind CSS, JavaScript, React, Vite, Figma, and Adobe Illustrator. With its intuitive user interface, smooth animations, and real-time exchange rate updates, the Bluestar Bank App provides users with a seamless and delightful banking experience. </p>
+<p align="center"><i>A fully responsive and visually appealing one-page banking application, designed and developed with modern web technologies. This project showcases my proficiency in HTML, CSS, Tailwind CSS, JavaScript, React, Vite, Figma, and Adobe Illustrator. With its intuitive user interface, smooth animations, and real-time exchange rate updates, the Bluestar Bank App provides users with a seamless banking experience.</i></p>
+<br/>
 <div align="center"><img src="src/assets/screenshots/ScreenshotTablet.png" width="500"/>
 <img src="src/assets/screenshots/ScreenshotMobile.png" width="275"/></div>
 <br/>
@@ -31,4 +32,21 @@
   <li>Adobe Illustrator</li>
   <li>Figma</li>
 </ul>
+
+<h1 align="left">Usage</h1>
+
+1. Clone the repository:<b> `git clone https://github.com/cristianvsirbu/bank-app.git`</b>
+2. Navigate to the project directory:<b> `cd bank-app`</b>
+3. Install the dependencies:<b> `npm install`</b>
+4. Start the development server:<b> `npm run dev`</b>
+5. Open the application in your browser:<b> `http://localhost:3000`</b>
+
+<h1 align="left">Contribution</h1>
+
+Contributions are welcome! If you encounter any issues or have suggestions for improvements, please feel free to submit a pull request or open an issue in the repository. To contribute to the Bluestar Bank App project, follow these steps:
+
+1. Fork the repository and create your branch:<b> `git checkout -b my-feature-branch`</b>
+2. Make your changes and commit them:<b> `git commit -m 'Added an awesome feature'`</b>
+3. Push to your branch:<b> `git push origin my-feature-branch`</b>
+4. Open a pull request in the main repository.😊
 
