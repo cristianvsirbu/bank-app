@@ -2,7 +2,7 @@
 <img src="src/assets/screenshots/ScreenshotPC.png"/>
 
 
-<p align="center"><i>A fully responsive and visually appealing one-page banking application, designed and developed with modern web technologies. This project showcases my proficiency in HTML, CSS, Tailwind CSS, JavaScript, React, Vite, Figma, and Adobe Illustrator. With its intuitive user interface, smooth animations, and real-time exchange rate updates, the Bluestar Bank App provides users with a seamless banking experience.</i></p>
+<p align="center"><i>A fully responsive and visually appealing single-page banking application, designed and developed with modern web technologies. This project showcases my proficiency in HTML, CSS, Tailwind CSS, JavaScript, React, Vite, Figma, and Adobe Illustrator. With its intuitive user interface, smooth animations, and real-time exchange rate updates, the Bluestar Bank App provides users with a seamless banking experience.</i></p>
 <br/>
 <div align="center"><img src="src/assets/screenshots/ScreenshotTablet.png" width="500"/>
 <img src="src/assets/screenshots/ScreenshotMobile.png" width="275"/></div>
