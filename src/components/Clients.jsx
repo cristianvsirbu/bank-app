@@ -30,18 +30,20 @@ const Clients = () => {
               <img src={client.logo} alt="client" className="w-[70%] h-[70%] object-contain mb-8 box-shadow-20" />
             </div>
           ))}
-          <div className="mt-10">
-            <h2 className={`${styles.heading2} text-center mt-10`}>We are now sponsoring:</h2>
-            <a
-              href="https://project-mars-serverless.vercel.app/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <img src={imageSource} alt="screenshot1" className="w-full" />
-            </a>
-          </div>
         </CardAnimation>
       </div>
+      <CardAnimation interval={300} animationClassName='stats'>
+        <div className="mt-10">
+          <h2 className={`${styles.heading2} text-center mt-10`}>We are now sponsoring:</h2>
+          <a
+            href="https://project-mars-serverless.vercel.app/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img src={imageSource} alt="screenshot1" className="w-full" />
+          </a>
+        </div>
+      </CardAnimation>
     </section>
   )
 }
