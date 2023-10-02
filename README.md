@@ -8,7 +8,7 @@
 <img src="src/assets/screenshots/ScreenshotMobile.png" width="275"/></div>
 <br/>
 
-<h1 align="left">Key Features</h1>
+<h2 align="left">Key Features</h2>
 <ul align="left">  
  <li><b>Responsive Design:</b> The application is designed to adapt seamlessly to various screen sizes and devices, ensuring a consistent user experience.</li>
  <li><b>Intuitive User Interface:</b> The user interface is thoughtfully designed to provide an intuitive and user-friendly banking experience.</li>
@@ -18,7 +18,7 @@
  <li><b>Design-driven Development:</b> Extensive work with Figma and Adobe Illustrator allowed for meticulous design choices and attention to detail, resulting in a visually pleasing and polished interface.</li>
 </ul>
 
-<h1 align="left">Technologies Used</h1>
+<h2 align="left">Technologies Used</h2>
 <ul>
   <li>HTML</li>
   <li>CSS</li>
@@ -33,7 +33,7 @@
   <li>Figma</li>
 </ul>
 
-<h1 align="left">Usage</h1>
+<h2 align="left">Usage</h2>
 
 1. Clone the repository:<b> `git clone https://github.com/cristianvsirbu/bank-app.git`</b>
 2. Navigate to the project directory:<b> `cd bank-app`</b>
@@ -41,7 +41,7 @@
 4. Start the development server:<b> `npm run dev`</b>
 5. Open the application in your browser:<b> `http://localhost:3000`</b>
 
-<h1 align="left">Contribution</h1>
+<h2 align="left">Contribution</h2>
 
 Contributions are welcome! If you encounter any issues or have suggestions for improvements, please feel free to submit a pull request or open an issue in the repository. To contribute to the Bluestar Bank App project, follow these steps:
 
