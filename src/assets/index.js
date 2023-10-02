@@ -27,6 +27,8 @@ import reward from '../assets/reward.webp';
 import usd from '../assets/usd.png';
 import gbp from '../assets/gbp.png';
 import ron from '../assets/ron.png';
+import sponsor from '../assets/sponsor.webp';
+import sponsor_mobile from '../assets/sponsor_mobile.svg';
 
 export {
     people01,
@@ -57,5 +59,7 @@ export {
     reward,
     usd,
     gbp,
-    ron
+    ron,
+    sponsor,
+    sponsor_mobile
 }

@@ -2,12 +2,13 @@ import { useEffect, useState } from "react"
 import { clients } from "../constants"
 import styles from "../style"
 import CardAnimation from "./CardAnimation"
+import { sponsor, sponsor_mobile } from "../assets"
 const Clients = () => {
   const [imageSource, setImageSource] = useState('');
 
   useEffect(() => {
     const handleResize = () => {
-      const newImageSource = window.innerWidth > 767 ? '/src/assets/sponsor.webp' : '/src/assets/sponsor_mobile.svg';
+      const newImageSource = window.innerWidth > 767 ? sponsor : sponsor_mobile;
       setImageSource(newImageSource);
     };
 
@@ -18,6 +19,7 @@ const Clients = () => {
       window.removeEventListener('resize', handleResize);
     };
   }, []);
+
   return (
     <section id="clients" className={`${styles.flexCenter} flex flex-col`}>
       <CardAnimation interval={300} animationClassName='stats'>

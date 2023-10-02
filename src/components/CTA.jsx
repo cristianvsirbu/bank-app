@@ -1,7 +1,6 @@
 import styles from "../style";
 import CardAnimation from "./CardAnimation";
 
-
 const CTA = () => {
   return (
     <CardAnimation interval={600} animationClassName='stats'>
