@@ -91,21 +91,18 @@ const Hero = () => (
           <img
             src={card}
             alt="card"
-            className="
-            w-[500px]
-            md:w-[550px] 
-            lg:w-[650px]
-            lg:h-[408px] 
-            mt-8 
-            lg:mt-0
-            self-center
-            shrink
-            lg:self-end
-            lg:relative
-            bottom-[390px]
-            lg:bottom-[410px]
-           "
-          />
+            className="w-[500px]
+                       md:w-[550px] 
+                       lg:w-[650px]
+                       lg:h-[408px] 
+                       mt-8 
+                       lg:mt-0
+                       self-center
+                       shrink
+                       lg:self-end
+                       lg:relative
+                       bottom-[390px]
+                       lg:bottom-[410px]"/>
         </CardAnimation>
       </div>
     </div>

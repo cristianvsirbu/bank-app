@@ -15,23 +15,24 @@ const PinAnimation = () => {
                 const isVisible = top < window.innerHeight && bottom >= 0;
 
                 if (isVisible) {
-                    window.removeEventListener('scroll', handleScroll); // Remove the event listener after the animation starts
+                    // Remove the event listener after the animation starts
+                    window.removeEventListener('scroll', handleScroll);
 
                     setTimeout(() => {
                         setTransformedWord('*afe');
-                    }, 3000); // Adjust the timeout before the animation starts (in milliseconds)
+                    }, 3000); 
 
                     setTimeout(() => {
                         setTransformedWord('**fe');
-                    }, 3500); // Adjust the delay between each step (in milliseconds)
+                    }, 3500); 
 
                     setTimeout(() => {
                         setTransformedWord('***e');
-                    }, 4000); // Adjust the delay between each step (in milliseconds)
+                    }, 4000); 
 
                     setTimeout(() => {
                         setTransformedWord('****');
-                    }, 4500); // Adjust the delay between each step (in milliseconds)
+                    }, 4500); 
                 }
             }
         };
