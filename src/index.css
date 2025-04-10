@@ -1,6 +1,4 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
 @font-face {
   font-family: "Neue Montreal";
@@ -23,13 +21,29 @@
       #1e2d3f -78.47%,
       #0c1219 91.61%);
   --card-shadow: 0px 20px 100px -10px rgba(66, 71, 91, 0.1);
+  
+/* Shadow variables */
+  --shadow-10: -8px -8px 16px 0px #39556725, 5px 3px 16px 0px #040607f5;
+  --shadow-15: -8px -8px 16px 0px #39556734, 8px 8px 16px 0px #040607f5;
+  --shadow-20: -8px -8px 16px 0px #182228, 8px 8px 16px 0px #040607;
+  --shadow-30: -8px -8px 16px 0px #1822287a, 8px 8px 16px 0px #040607;
+  --shadow-40: -8px -8px 16px 0px #1822287a, 8px 8px 16px 0px #040607;
+  --shadow-50: -8px -8px 16px 0px #1822287a, 8px 8px 16px 0px #040607;
+  --shadow-70: -8px -8px 16px 0px #1822287a, 8px 8px 16px 0px #040607;
+
+  /* Radius variables */
+  --radius-10: 10px;
+  --radius-15: 15px;
+  --radius-20: 20px;
+  --radius-30: 30px;
+  --radius-40: 40px;
+  --radius-50: 50px;
+  --radius-70: 70px;
 }
 
 * {
   scroll-behavior: smooth;
 }
-
-
 
 .bg__gradient {
   background: linear-gradient(180deg, #0d131a 22.71%, #0f1519 100%);
@@ -60,12 +74,12 @@
       rgba(255, 255, 255, 0) -341.94%,
       #14101d 95.11%);
 }
+
 .discount__gradient-blur {
   background: #05F6FA;
   filter: blur(30px);
   opacity: 0.95;
 }
-
 
 .bg-discount-gradient {
   background: linear-gradient(125deg, rgba(51, 187, 207, 0.43) 0%, rgba(37, 59, 128, 0.69) 100%);
@@ -141,13 +155,11 @@
   filter: blur(123px);
 }
 
-
 .card__blur {
   width: 12rem;
   height: 5rem;
   flex-shrink: 1;
   border-radius: 20px;
-  /* border: 1px solid rgba(92, 92, 92, 0.50); */
   background: linear-gradient(111deg, rgba(212, 212, 212, 0.201) 0%, rgba(0, 0, 0, 0.007) 100%);
   backdrop-filter: blur(4px);
   border: 1px solid #71717146;
@@ -159,91 +171,45 @@
   box-shadow: -8px -8px 16px 0px #435c6b35, 8px 8px 16px 0px #040607f5;
 }
 
-
-@layer utilities {
-
-  .box-shadow-10 {
-    box-shadow: -8px -8px 16px 0px #39556725, 5px 3px 16px 0px #040607f5;
-    border-radius: 10px;
-  }
-
-  .box-shadow-15 {
-    box-shadow: -8px -8px 16px 0px #39556734, 8px 8px 16px 0px #040607f5;
-    border-radius: 15px;
-  }
-
-  .box-shadow-20 {
-    box-shadow: -8px -8px 16px 0px #182228, 8px 8px 16px 0px #040607;
-    border-radius: 20px;
-  }
-
-  .box-shadow-30 {
-    box-shadow: -8px -8px 16px 0px #1822287a, 8px 8px 16px 0px #040607;
-    border-radius: 30px;
-  }
-
-  .box-shadow-40 {
-    box-shadow: -8px -8px 16px 0px #1822287a, 8px 8px 16px 0px #040607;
-    border-radius: 40px;
-  }
-
-  .box-shadow-50 {
-    box-shadow: -8px -8px 16px 0px #1822287a, 8px 8px 16px 0px #040607;
-    border-radius: 50px;
-  }
-
-  .box-shadow-70 {
-    box-shadow: -8px -8px 16px 0px #1822287a, 8px 8px 16px 0px #040607;
-    border-radius: 70px;
-  }
-}
-
-
 @media (max-width: 426px) {
   .screenshots {
     box-shadow: none;
-    @apply box-shadow-40
+    box-shadow: var(--shadow-40);
   }
 }
 
 @media (min-width: 426px) {
   .screenshots {
     box-shadow: none;
-    @apply box-shadow-30
+    box-shadow: var(--shadow-30);
   }
 }
-
-
-
 
 @media (max-width: 426px) {
   .stores {
     box-shadow: none;
-    @apply box-shadow-30
+    box-shadow: var(--shadow-30);
   }
 }
 
 @media (min-width: 767px) {
   .stores {
     box-shadow: none;
-    @apply box-shadow-10
+    box-shadow: var(--shadow-10);
   }
 }
-
-
 
 @media only screen and (min-width: 427px) and (max-width: 766px) {
   .stores {
     box-shadow: none;
-    @apply box-shadow-40
+    box-shadow: var(--shadow-40);
   }
 
   .screenshots {
     box-shadow: none;
-    @apply box-shadow-70
+    box-shadow: var(--shadow-70);
   }
 }
-
 
 .animate {
   opacity: 0;
