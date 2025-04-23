@@ -18,8 +18,7 @@ const Hero = () => (
 					</p>
 				</div>
 				<CardAnimation interval={500} animationClassName="animate">
-					<h1 className="font-neue ss:text-[72px] text-[50px]text-white flex-1 text-center font-bold lg:text-left">
-						We Grow <br className="sm:max-lg:hidden" /> With You
+					<h1 className="font-neue ss:text-[72px] text-[50px] text-white flex-1 text-center font-bold lg:text-left">
 					</h1>
 
 					<p
