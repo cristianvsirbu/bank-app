@@ -1,115 +1,48 @@
-import styles from "../style"
-import { sale, card } from "../assets"
-import CardAnimation from "./CardAnimation"
-import Exchange from "./Exchange";
-
+import styles from '../style';
+import { sale, card } from '../assets';
+import CardAnimation from './CardAnimation';
+import Exchange from './Exchange';
 
 const Hero = () => (
-  <section className={`flex justify-center lg:justify-start flex-col
-    lg:pb-0
-    pt-10 
-  `}>
-    <div className={`
-      flex
-      flex-col
-      xl:px-0 
-      sm:px-16 
-      px-6
-      lg:h-0
-      lg:pb-[33rem]
-      lg:pt-[4rem]
-    `}>
+	<section className={`flex flex-col justify-center pt-10 lg:justify-start lg:pb-0`}>
+		<div className={`flex flex-col px-6 sm:px-16 lg:h-0 lg:pt-[4rem] lg:pb-[33rem] xl:px-0`}>
+			<div className="flex flex-col items-center lg:items-start">
+				<div className="bg-discount-gradient shadow-10 rounded-10 flex items-center self-center rounded-[25px] px-2 py-[3px] sm:rounded-[15px] sm:py-[5px] md:rounded-[10px] md:px-4 lg:self-start">
+					<span className="discount__gradient-blur absolute h-8 w-8 animate-pulse" />
+					<img src={sale} alt="discount" className="w-[22px] sm:w-[32px]" />
+					<p
+						className={`ml-2 text-[13px] font-semibold text-white/50 md:text-[16px] lg:text-[18px]`}
+					>
+						<span className="font-neue text-white">50% </span>
+						DISCOUNT FOR <span className="font-neue text-white"> 1 YEAR</span>
+					</p>
+				</div>
+				<CardAnimation interval={500} animationClassName="animate">
+					<h1 className="font-neue ss:text-[72px] text-[50px]text-white flex-1 text-center font-bold lg:text-left">
+						We Grow <br className="sm:max-lg:hidden" /> With You
+					</h1>
 
-      <div className="flex flex-col items-center lg:items-start">
-        <div className="
-        flex  
-        items-center
-        self-center
-        lg:self-start
-        py-[3px]	  
-        sm:py-[5px] 
-        px-2 
-        md:px-4 
-        bg-discount-gradient 
-        rounded-[25px] 
-        sm:rounded-[15px] 
-        md:rounded-[10px] 
-        box-shadow-10
-      ">
-
-          <span className="discount__gradient-blur w-8 h-8 absolute animate-pulse" />
-          <img
-            src={sale}
-            alt="discount"
-            className="w-[22px] sm:w-[32px]" />
-
-          <p
-            className={`
-            text-dimWhite
-            ml-2
-            font-semibold
-            text-[13px]
-            md:text-[16px]
-            lg:text-[18px] 
-        `}>
-            <span className="text-white font-neue">50% </span>
-            DISCOUNT FOR {" "}
-            <span className="text-white font-neue"> 1 YEAR</span>
-          </p>
-        </div>
-        <CardAnimation interval={500} animationClassName="animate">
-          <h1
-            className="
-            flex-1
-            font-neue
-            font-bold
-            text-center
-            lg:text-left
-            ss:text-[72px]
-            text-[50px]
-            text-white
-        ">
-            We Grow <br className="sm:max-lg:hidden" /> With You
-          </h1>
-
-          <p
-            className={`
-            ${styles.paragraph} 
-            max-w-[600px] 
-            md:max-w-[421px] 
-            text-[15px] 
-            sm:text-[18px] 
-            md:text-[20px]            
-            text-center 
-            lg:text-left 
-            text-dimWhite
-        `}>
-            With a commitment to excellence and personalized service, we strive to be your financial partner for life. Experience seamless banking solutions, expert advice, and a range of innovative products tailored to meet your unique needs.
-          </p>
-        </CardAnimation>
-        <CardAnimation interval={500} animationClassName="sidebar">
-          <img
-            src={card}
-            alt="card"
-            className="w-[500px]
-                       md:w-[550px] 
-                       lg:w-[650px]
-                       lg:h-[408px] 
-                       mt-8 
-                       lg:mt-0
-                       self-center
-                       shrink
-                       lg:self-end
-                       lg:relative
-                       bottom-[390px]
-                       lg:bottom-[410px]"/>
-        </CardAnimation>
-      </div>
-    </div>
-    <div className={`flex flex-col justify-center`}>
-      <Exchange />
-    </div>
-  </section>
-)
+					<p
+						className={`${styles.paragraph} max-w-[600px] text-center text-[15px] text-white/50 sm:text-[18px] md:max-w-[421px] md:text-[20px] lg:text-left`}
+					>
+						With a commitment to excellence and personalized service, we strive to be your financial
+						partner for life. Experience seamless banking solutions, expert advice, and a range of
+						innovative products tailored to meet your unique needs.
+					</p>
+				</CardAnimation>
+				<CardAnimation interval={500} animationClassName="sidebar">
+					<img
+						src={card}
+						alt="card"
+						className="bottom-[390px] mt-8 w-[500px] shrink self-center md:w-[550px] lg:relative lg:bottom-[410px] lg:mt-0 lg:h-[408px] lg:w-[650px] lg:self-end"
+					/>
+				</CardAnimation>
+			</div>
+		</div>
+		<div className={`flex flex-col justify-center`}>
+			<Exchange />
+		</div>
+	</section>
+);
 
 export default Hero;
