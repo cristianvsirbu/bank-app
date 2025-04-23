@@ -16,7 +16,7 @@ const Exchange = () => {
 			method: 'GET',
 			url: 'https://exchangerate-api.p.rapidapi.com/rapid/latest/EUR',
 			headers: {
-				'X-RapidAPI-Key': process.env.REACT_APP_RAPID_API_KEY,
+				'X-RapidAPI-Key': import.meta.env.VITE_RAPID_API_KEY,
 				'X-RapidAPI-Host': 'exchangerate-api.p.rapidapi.com',
 			},
 		};
