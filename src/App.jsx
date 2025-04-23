@@ -9,7 +9,7 @@ import {
   Testimonials,
   CTA,
   PC,
-  Bussiness,
+  Business,
 } from './components';
 const App = () => (
   <div className="bg__gradient w-full overflow-hidden">
@@ -23,7 +23,7 @@ const App = () => (
       <div className={`${styles.boxWidth}`}>
         <Hero />
         <Stats />
-        <Bussiness />
+        <Business />
         <Mobile />
         <PC />
         <Testimonials />

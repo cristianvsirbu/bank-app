@@ -3,7 +3,7 @@ import PinAnimation from './PinAnimation';
 
 // eslint-disable-next-line react/prop-types
 
-const Bussiness = () => {
+const Business = () => {
   return (
     <section>
       <div className="my-[4rem]">
@@ -11,7 +11,7 @@ const Bussiness = () => {
           <h2
             className={`${styles.heading2} flex flex-col items-center justify-center text-center leading-relaxed whitespace-nowrap`}
           >
-            Your Money Are <br />
+            Your Money Is <br />
           </h2>
           <PinAnimation />
           <h2
@@ -29,4 +29,4 @@ const Bussiness = () => {
   );
 };
 
-export default Bussiness;
+export default Business;
