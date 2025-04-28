@@ -3,47 +3,55 @@ import styles from '../style';
 import BlurCardAnimation from './BlurCardAnimation';
 
 const PinAnimation = () => {
-    const [transformedWord, setTransformedWord] = useState('Safe');
-    const wordRef = useRef(null);
+  const [transformedWord, setTransformedWord] = useState('Safe');
+  const wordRef = useRef(null);
 
-    useEffect(() => {
-        const handleScroll = () => {
-            const element = wordRef.current;
+  useEffect(() => {
+    const handleScroll = () => {
+      const element = wordRef.current;
 
-            if (element) {
-                const { top, bottom } = element.getBoundingClientRect();
-                const isVisible = top < window.innerHeight && bottom >= 0;
+      if (element) {
+        const { top, bottom } = element.getBoundingClientRect();
+        const isVisible = top < window.innerHeight && bottom >= 0;
 
-                if (isVisible) {
-                    // Remove the event listener after the animation starts
-                    window.removeEventListener('scroll', handleScroll);
+        if (isVisible) {
+          // Remove the event listener after the animation starts
+          window.removeEventListener('scroll', handleScroll);
 
-                    setTimeout(() => {
-                        setTransformedWord('*afe');
-                    }, 3000); 
+          setTimeout(() => {
+            setTransformedWord('*afe');
+          }, 3000);
 
-                    setTimeout(() => {
-                        setTransformedWord('**fe');
-                    }, 3500); 
+          setTimeout(() => {
+            setTransformedWord('**fe');
+          }, 3500);
 
-                    setTimeout(() => {
-                        setTransformedWord('***e');
-                    }, 4000); 
+          setTimeout(() => {
+            setTransformedWord('***e');
+          }, 4000);
 
-                    setTimeout(() => {
-                        setTransformedWord('****');
-                    }, 4500); 
-                }
-            }
-        };
+          setTimeout(() => {
+            setTransformedWord('****');
+          }, 4500);
+        }
+      }
+    };
 
-        window.addEventListener('scroll', handleScroll);
-        return () => {
-            window.removeEventListener('scroll', handleScroll);
-        };
-    }, []);
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
-    return <h2 ref={wordRef} className={`${styles.heading2} text-center leading-relaxed flex flex-col justify-center items-center whitespace-nowrap`}><BlurCardAnimation />{transformedWord}</h2>;
+  return (
+    <h2
+      ref={wordRef}
+      className={`${styles.heading2} text-center leading-relaxed flex flex-col justify-center items-center whitespace-nowrap`}
+    >
+      <BlurCardAnimation />
+      {transformedWord}
+    </h2>
+  );
 };
 
 export default PinAnimation;
