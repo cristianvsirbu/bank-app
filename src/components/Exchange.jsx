@@ -1,41 +1,56 @@
-import axios from 'axios';
 import { useState, useEffect } from 'react';
 import currencies from './currenciesConfig.js';
 import usdImage from '../assets/usd.png';
 import gbpImage from '../assets/gbp.png';
 import ronImage from '../assets/ron.png';
-import { v4 as uuid } from 'uuid';
 import CardAnimation from './CardAnimation.jsx';
 
 const Exchange = () => {
   const [responseData, setResponseData] = useState(null);
   const [isRequestComplete, setIsRequestComplete] = useState(false);
+  const [error, setError] = useState(null);
 
   useEffect(() => {
-    const currency = {
+    const controller = new AbortController();
+    const url = 'https://exchangerate-api.p.rapidapi.com/rapid/latest/EUR';
+    const options = {
       method: 'GET',
-      url: 'https://exchangerate-api.p.rapidapi.com/rapid/latest/EUR',
       headers: {
-        'X-RapidAPI-Key': import.meta.env.VITE_RAPIDAPI_KEY,
-        'X-RapidAPI-Host': 'exchangerate-api.p.rapidapi.com',
+        'x-rapidapi-key': import.meta.env.VITE_RAPID_API_KEY,
+        'x-rapidapi-host': 'exchangerate-api.p.rapidapi.com',
       },
+      signal: controller.signal,
     };
-
+  
     const fetchData = async () => {
       try {
-        const response = await axios.request(currency);
-        setResponseData(response.data);
-        setIsRequestComplete(true);
+        const response = await fetch(url, options);
+        if (!response.ok) {
+          throw new Error(`Error: ${response.status} ${response.statusText}`);
+        }
+        const result = await response.json();
+        setResponseData(result);
       } catch (error) {
-        console.error(error);
+        if (error.name !== 'AbortError') {
+          console.error(error);
+          setError('Failed to fetch exchange rates. Please try again later.');
+        }
+      } finally {
+        setIsRequestComplete(true);
       }
     };
-
+  
     fetchData();
+  
+    return () => controller.abort();
   }, []);
 
   if (!isRequestComplete) {
     return <p>Loading...</p>;
+  }
+
+  if (error) {
+    return <p className="text-red-500">{error}</p>;
   }
 
   if (responseData) {
@@ -64,7 +79,7 @@ const Exchange = () => {
       }, {});
 
     return (
-      <div key={uuid()} className={`flex flex-col py-20 lg:pt-0 w-full items-center font-neue`}>
+      <div className={`flex flex-col py-20 lg:pt-0 w-full items-center font-neue`}>
         <p className="text-[18px] text-dimWhite ">The Exchange Rates for</p>
         <div className="flex items-center self-center py-[3px] sm:py-[5px] lg:mt-2 px-2 md:px-4 bg-discount-gradient rounded-[25px] sm:rounded-[15px] md:rounded-[10px] box-shadow-10">
           <p className="text-white font-bold text-[20px]">{formattedDate} :</p>
@@ -91,7 +106,7 @@ const Exchange = () => {
                   </p>
                   <h2
                     className="text-white text-[24px] sm:max-md:text-[17px] lg:text-[32px] font-bold"
-                    key={uuid()}
+                    key={currency}
                   >
                     {rate.rate.toFixed(3)} {currency}
                   </h2>
