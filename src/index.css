@@ -60,6 +60,7 @@
       rgba(255, 255, 255, 0) -341.94%,
       #14101d 95.11%);
 }
+
 .discount__gradient-blur {
   background: #05F6FA;
   filter: blur(30px);

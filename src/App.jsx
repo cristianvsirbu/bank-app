@@ -1,7 +1,18 @@
-import styles from "./style"
-import { Navbar, Hero, Stats, Footer, Clients, Mobile, Testimonials, CTA, PC, Bussiness } from "./components";
+import styles from './style';
+import {
+  Navbar,
+  Hero,
+  Stats,
+  Footer,
+  Clients,
+  Mobile,
+  Testimonials,
+  CTA,
+  PC,
+  Business,
+} from './components';
 const App = () => (
-  <div className='bg__gradient w-full overflow-hidden'>
+  <div className="bg__gradient w-full overflow-hidden">
     <div className={`${styles.paddingX} ${styles.flexCenter}`}>
       <div className={`${styles.boxWidth}`}>
         <Navbar />
@@ -12,7 +23,7 @@ const App = () => (
       <div className={`${styles.boxWidth}`}>
         <Hero />
         <Stats />
-        <Bussiness />
+        <Business />
         <Mobile />
         <PC />
         <Testimonials />
@@ -22,7 +33,6 @@ const App = () => (
       </div>
     </div>
   </div>
-)
-
+);
 
 export default App;
