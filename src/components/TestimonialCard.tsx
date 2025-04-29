@@ -1,10 +1,15 @@
 import { forwardRef } from 'react';
 import { quotations } from '../assets';
 import CardAnimation from './CardAnimation';
-import PropTypes from 'prop-types';
 
-// eslint-disable-next-line no-unused-vars
-const TestimonialCard = forwardRef(({ content, name, title, img }, ref) => {
+interface TestimonialCardProps {
+  content: string;
+  name: string;
+  title: string;
+  img: string;
+}
+
+const TestimonialCard = forwardRef(({ content, name, title, img }: TestimonialCardProps, ref) => {
   return (
     <CardAnimation interval={500} animationClassName="stats">
       <div className="flex justify-between flex-col px-10 py-12 rounded-[20px] max-w-[370px] md:mr-10 sm:mr-5 mr-0 my-5 feedback-card">
@@ -33,13 +38,5 @@ const TestimonialCard = forwardRef(({ content, name, title, img }, ref) => {
     </CardAnimation>
   );
 });
-
-TestimonialCard.displayName = 'TestimonialCard';
-TestimonialCard.propTypes = {
-  content: PropTypes.string.isRequired,
-  name: PropTypes.string.isRequired,
-  title: PropTypes.string.isRequired,
-  img: PropTypes.string.isRequired,
-};
 
 export default TestimonialCard;

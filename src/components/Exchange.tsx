@@ -1,17 +1,19 @@
 import { useState, useEffect } from 'react';
-import currencies from './currenciesConfig.js';
+import currencies from './currenciesConfig.ts';
 import usdImage from '../assets/usd.png';
 import gbpImage from '../assets/gbp.png';
 import ronImage from '../assets/ron.png';
-import CardAnimation from './CardAnimation.jsx';
+import CardAnimation from './CardAnimation.tsx';
+
+type ExchangeRatesResponse = {
+  rates: Record<string, number>;
+};
 
 const Exchange = () => {
-  const [responseData, setResponseData] = useState(null);
+  const [responseData, setResponseData] = useState<ExchangeRatesResponse | null>(null);
   const [isRequestComplete, setIsRequestComplete] = useState(false);
-  const [error, setError] = useState(null);
 
   useEffect(() => {
-    const controller = new AbortController();
     const url = 'https://exchangerate-api.p.rapidapi.com/rapid/latest/EUR';
     const options = {
       method: 'GET',
@@ -19,9 +21,8 @@ const Exchange = () => {
         'x-rapidapi-key': import.meta.env.VITE_RAPID_API_KEY,
         'x-rapidapi-host': 'exchangerate-api.p.rapidapi.com',
       },
-      signal: controller.signal,
     };
-  
+
     const fetchData = async () => {
       try {
         const response = await fetch(url, options);
@@ -31,26 +32,17 @@ const Exchange = () => {
         const result = await response.json();
         setResponseData(result);
       } catch (error) {
-        if (error.name !== 'AbortError') {
-          console.error(error);
-          setError('Failed to fetch exchange rates. Please try again later.');
-        }
+        console.log('Error fetching data:', error);
       } finally {
         setIsRequestComplete(true);
       }
     };
-  
+
     fetchData();
-  
-    return () => controller.abort();
   }, []);
 
   if (!isRequestComplete) {
     return <p>Loading...</p>;
-  }
-
-  if (error) {
-    return <p className="text-red-500">{error}</p>;
   }
 
   if (responseData) {
@@ -73,10 +65,10 @@ const Exchange = () => {
       .reduce((obj, currency) => {
         obj[currency] = {
           rate: responseData.rates[currency],
-          image: currencyImages[currency],
+          image: currencyImages[currency as keyof typeof currencyImages],
         };
         return obj;
-      }, {});
+      }, {} as Record<string, { rate: number; image: string }>);
 
     return (
       <div className={`flex flex-col py-20 lg:pt-0 w-full items-center font-neue`}>

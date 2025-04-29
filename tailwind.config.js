@@ -1,5 +1,5 @@
 /** @type {import('tailwindcss').Config} */
-export const content = ["./index.html", "./src/**/*.{js,jsx}"];
+export const content = ["./index.html", "./src/**/*.{js,jsx,ts,tsx}"];
 export const mode = "jit";
 export const theme = {
   extend: {
